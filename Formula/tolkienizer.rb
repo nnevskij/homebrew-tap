@@ -1,8 +1,8 @@
 class Tolkienizer < Formula
   desc "Transmute ordinary words into the mythic prose of J.R.R. Tolkien using AI"
   homepage "https://github.com/nnevskij/tolkienizer"
-  url "https://github.com/nnevskij/tolkienizer/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "1a3ea7e3b378619d4830d9639353e93629193e274cfed0876054382ebbcaacfb"
+  url "https://github.com/nnevskij/tolkienizer/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "ce45fc82b0a18df99c600aaff9eba45bcb64000332ac08a5b4ee5ec7aba2d38d"
   license "MIT"
   head "https://github.com/nnevskij/tolkienizer.git", branch: "main"
 
@@ -18,5 +18,6 @@ class Tolkienizer < Formula
   test do
     assert_match "tolkienizer version", shell_output("#{bin}/tolkienizer --version")
     assert_match "epic", shell_output("#{bin}/tolkienizer --list-styles")
+    assert_match "English", shell_output("#{bin}/tolkienizer --list-langs")
   end
 end
