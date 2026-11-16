@@ -1,6 +1,6 @@
 cask "shaft" do
-  version "0.2.0"
-  sha256 "efad317fbf06f328d8d82d3a2d41be225066e01019ac546f388e4ec750af0821"
+  version "0.3.0"
+  sha256 "e5771c44cffa817403a32ad688259cad05bdb0e3b0d9aed075bbaa865b17a184"
 
   url "https://github.com/nnevskij/shaft/releases/download/v#{version}/Shaft-#{version}.dmg"
   name "Shaft"
